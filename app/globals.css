@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Brand colours — no pure black anywhere */
+  --color-navy-950: #0a1628;
+  --color-navy-800: #1e3a5f;
+  --color-navy-600: #2d5f8e;
+  --color-navy-400: #5b8db8;
+
+  --color-blue-wash: #eff6ff;
+  --color-blue-light: #dbeafe;
+
+  --color-yellow-wash: #fefce8;
+  --color-yellow-light: #fef3c7;
+
+  --color-amber-brand: #f59e0b;
+  --color-amber-dark: #d97706;
+
+  /* Fonts */
+  --font-display: var(--font-archivo);
+  --font-sans: var(--font-plex);
+  --font-mono: var(--font-plex-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a1628;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Smooth scrolling site-wide */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Display face is a heavy grotesque — pull the tracking in so big sizes set like a nameplate */
+.font-display {
+  letter-spacing: -0.02em;
+}
+
+/* Base prose overrides for blog posts */
+.prose {
+  --tw-prose-body: #1e3a5f;
+  --tw-prose-headings: #0a1628;
+  --tw-prose-links: #d97706;
+  --tw-prose-bold: #0a1628;
+  --tw-prose-quotes: #2d5f8e;
+  --tw-prose-quote-borders: #f59e0b;
+  --tw-prose-hr: #dbeafe;
+  --tw-prose-bullets: #5b8db8;
+  --tw-prose-counters: #5b8db8;
+  --tw-prose-code: #0a1628;
+  --tw-prose-pre-bg: #eff6ff;
+}
