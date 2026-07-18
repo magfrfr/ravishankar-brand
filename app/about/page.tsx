@@ -6,7 +6,7 @@ import { Reveal } from "@/components/motion";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "28+ years building markets across India, Africa, Europe and the GCC. The story behind the work.",
+    "28+ years building markets across India, Africa, Europe and the Middle East. The story behind the work.",
 };
 
 export default function AboutPage() {
@@ -39,27 +39,33 @@ export default function AboutPage() {
             </p>
             <p>
               Since then the products have kept changing: Tata cars, excavators
-              and backhoe loaders, MRF tires, brake linings, auto components
-              and today industrial electric motors. At Tata Hitachi I beat JCB
-              to a first-ever institutional sale and held 80% market share in a
-              region where the target was 50%. At Rane and MRF I carried Indian
-              products into Turkey, Tunisia, Indonesia and the UK, and signed
-              the first OEM customer at TMD Germany. At UCAL Group I spent
-              eight years building a 500-part export range that reached the EU.
+              and backhoe loaders, MRF tires, brake linings, shock absorbers,
+              engine parts and today industrial electric motors. At Tata
+              Hitachi I beat JCB to a first-ever institutional sale and held
+              80% market share in a region where the target was 50%. At Rane
+              and MRF I carried Indian products into Turkey, Tunisia, Indonesia
+              and the UK, introduced CVDP for Europe&apos;s commercial
+              vehicles, and signed the first OEM customer at TMD Germany. At
+              UNIMO (UCAL Group) I spent eight years building a 500-part export
+              range that reached the EU.
             </p>
             <p>
-              People call this experience. I think of it as one craft practised
-              in many markets: find the customer, earn the trust, build the
-              channel, and stay until the market holds its own. I call myself a
-              market maker, because markets are made, not found.
+              People call this experience. I call it being a sector-agnostic
+              sales and marketing practitioner: one craft practised in many
+              markets. Find the customer, earn the trust, build the channel,
+              and stay until the market holds its own. I call myself a market
+              maker, because markets are made, not found.
             </p>
             <p>
               Today I lead Marketing &amp; Growth at LEDL Motors, opening
-              dealer networks across India and new markets in Africa and the
-              GCC. And I&apos;m still a student: I finished a business
-              analytics diploma at BITS Pilani in 2023, 26 years after my first
-              sales call. This site is where I pass forward what I&apos;ve been
-              lucky enough to learn.
+              dealer networks across India and new markets from the UAE and
+              Russia to Africa and South Asia. I&apos;ve built the LEDL brand
+              nearly end to end, right down to a work culture brand that ties
+              R&amp;D, service and quality assurance together behind the
+              customer. And I&apos;m still a student: I finished a business
+              analytics diploma at BITS Pilani in 2023, 26 years after my
+              first sales call. This site is where I pass forward what
+              I&apos;ve been lucky enough to learn.
             </p>
           </Reveal>
 
@@ -94,7 +100,7 @@ export default function AboutPage() {
               What I Believe
             </p>
             <blockquote className="font-display text-2xl md:text-3xl text-white font-extrabold leading-relaxed">
-              &ldquo;Attract. Convert. Retain.
+              &ldquo;Sense. Serve. Strengthen.
               <br />
               Everything else is commentary.&rdquo;
             </blockquote>
@@ -122,7 +128,7 @@ export default function AboutPage() {
               },
               {
                 title: "Process makes growth repeatable",
-                desc: "Attract, Convert, Retain. When execution follows a framework, growth stops depending on heroics and starts compounding.",
+                desc: "Sense, Serve, Strengthen. When execution follows a framework, growth stops depending on heroics and starts compounding.",
               },
               {
                 title: "People are the strategy",

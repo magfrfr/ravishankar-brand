@@ -30,11 +30,12 @@ export default function HomePage() {
           </FadeIn>
           <FadeIn delay={0.24}>
             <p className="text-navy-600 text-xl max-w-2xl leading-relaxed mb-10">
-              I&apos;m Ravishankar R. For 28 years I&apos;ve built markets from
-              scratch: dealer networks across India, export channels into
-              Africa and the GCC, product lines from tires to industrial
-              motors. I write about sales, marketing and growth for people who
-              want to build things that last.
+              I&apos;m Ravishankar R, a sector-agnostic sales and marketing
+              practitioner. For 28 years I&apos;ve built markets from scratch:
+              dealer networks across India, export channels from the UAE and
+              Russia to Africa, product lines from tires to industrial motors.
+              I write about sales, marketing and growth for people who want to
+              build things that last.
             </p>
           </FadeIn>
           <FadeIn delay={0.36}>
@@ -87,15 +88,15 @@ export default function HomePage() {
             rows={[
               {
                 title: "Market entry, from zero",
-                desc: "Surveys, positioning, export pricing built backwards from the shelf, and channel margins that keep partners loyal. This is how Turkey, Tunisia, Indonesia, East and West Africa and the GCC were opened.",
+                desc: "Surveys, positioning, export pricing built backwards from the shelf, and channel margins that keep partners loyal. This is how Turkey, Tunisia, Indonesia, the UAE and markets across Africa were opened.",
               },
               {
                 title: "Dealer & distributor networks",
                 desc: "Networks are built face to face. Appointing the right partners, training their teams, and standing beside them until the market holds its own.",
               },
               {
-                title: "The ACR framework",
-                desc: "Attract, Convert, Retain: my own execution framework. Lead generation feeding structured conversion through pricing and warranty design, then retention through buybacks, AMC programs and upgrades.",
+                title: "The SSS framework",
+                desc: "Sense, Serve, Strengthen: my own execution framework. Sensing opportunities, customer needs and market demand, serving with the right solutions that create value, then strengthening relationships through support and feedback.",
               },
               {
                 title: "Brand & digital growth",

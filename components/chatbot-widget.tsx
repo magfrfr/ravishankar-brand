@@ -13,7 +13,7 @@ const GREETING =
 
 const STARTERS = [
   "How do I enter a new market?",
-  "What is the ACR framework?",
+  "What is the SSS framework?",
   "How do I pick my first distributor?",
 ];
 

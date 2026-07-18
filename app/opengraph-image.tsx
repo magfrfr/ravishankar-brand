@@ -45,7 +45,7 @@ export default function OpengraphImage() {
           They&apos;re made.
         </div>
         <div style={{ fontSize: 30, color: "#9fb3c8", marginTop: 40 }}>
-          28 years building markets across India, Africa, Europe and the GCC
+          28 years building markets across India, Africa, Europe and the Middle East
         </div>
       </div>
     ),

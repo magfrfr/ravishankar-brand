@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Ravishankar R",
   },
   description:
-    "28+ years building markets across India, Africa, Europe and the GCC. Writing about sales, marketing, and building businesses that last.",
+    "28+ years building markets across India, Africa, Europe and the Middle East. Writing about sales, marketing, and building businesses that last.",
   openGraph: {
     type: "website",
     locale: "en_IN",
