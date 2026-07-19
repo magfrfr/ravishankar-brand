@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import SpecSheet from "@/components/spec-sheet";
 import CtaLink from "@/components/cta-link";
 import { Reveal } from "@/components/motion";
+import { careerYears } from "@/lib/career";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "28+ years building markets across India, Africa, Europe and the Middle East. The story behind the work.",
+  description: `${careerYears()}+ years building markets across India, Africa, Europe and the Middle East. The story behind the work.`,
 };
 
 export default function AboutPage() {
@@ -58,8 +58,8 @@ export default function AboutPage() {
             </p>
             <p>
               Today I lead Marketing &amp; Growth at LEDL Motors, opening
-              dealer networks across India and new markets from the UAE and
-              Russia to Africa and South Asia. I&apos;ve built the LEDL brand
+              dealer networks across India and new markets across the Middle
+              East and East and West Africa. I&apos;ve built the LEDL brand
               nearly end to end, right down to a work culture brand that ties
               R&amp;D, service and quality assurance together behind the
               customer. And I&apos;m still a student: I finished a business

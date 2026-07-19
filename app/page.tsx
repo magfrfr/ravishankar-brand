@@ -7,6 +7,7 @@ import JourneyMorph from "@/components/journey-morph";
 import SpecSheet from "@/components/spec-sheet";
 import CtaLink from "@/components/cta-link";
 import { FadeIn, Reveal, Counter, HeroExit } from "@/components/motion";
+import { YearsText, YearsCounter } from "@/components/years";
 
 export default function HomePage() {
   const posts = SHOW_BLOG ? getAllPosts().slice(0, 3) : [];
@@ -31,9 +32,10 @@ export default function HomePage() {
           <FadeIn delay={0.24}>
             <p className="text-navy-600 text-xl max-w-2xl leading-relaxed mb-10">
               I&apos;m Ravishankar R, a sector-agnostic sales and marketing
-              practitioner. For 28 years I&apos;ve built markets from scratch:
-              dealer networks across India, export channels from the UAE and
-              Russia to Africa, product lines from tires to industrial motors.
+              practitioner. For <YearsText />{" "}years I&apos;ve built markets
+              from scratch: dealer networks across India, export channels from
+              the Middle East to East and West Africa, product lines from tires
+              to industrial motors.
               I write about sales, marketing and growth for people who want to
               build things that last.
             </p>
@@ -53,7 +55,11 @@ export default function HomePage() {
           {stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.1} className="text-center">
               <p className="font-display text-4xl md:text-5xl font-black text-white">
-                <Counter to={s.value} suffix={s.suffix} />
+                {s.auto ? (
+                  <YearsCounter suffix={s.suffix} />
+                ) : (
+                  <Counter to={s.value} suffix={s.suffix} />
+                )}
               </p>
               <p className="mt-2 text-white/60 text-sm leading-snug">
                 {s.label}
@@ -78,7 +84,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <Reveal>
             <h2 className="font-display text-4xl font-extrabold text-navy-950 mb-3 text-center">
-              What I Bring to the Table
+              How I Build Markets
             </h2>
             <p className="text-navy-400 text-center mb-14 max-w-xl mx-auto">
               Not theory. Three decades of doing it, in India and abroad.

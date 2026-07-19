@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { roles, education } from "@/lib/career";
+import { roles, education, careerYears } from "@/lib/career";
 import SpecSheet from "@/components/spec-sheet";
 import { Reveal, TimelineTrack } from "@/components/motion";
+import { YearsText } from "@/components/years";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description:
-    "28+ years across sales, exports, marketing and growth leadership, from Chennai to markets on three continents.",
+  description: `${careerYears()}+ years across sales, exports, marketing and growth leadership, from Chennai to markets on three continents.`,
 };
 
 export default function ExperiencePage() {
@@ -19,7 +19,7 @@ export default function ExperiencePage() {
               Career
             </p>
             <h1 className="font-display text-5xl font-extrabold text-navy-950 leading-tight">
-              28+ Years. Nine Companies.
+              <YearsText suffix="+" />{" "}Years. Nine Companies.
               <br />
               One Craft.
             </h1>
@@ -86,7 +86,7 @@ export default function ExperiencePage() {
         <div className="max-w-2xl mx-auto">
           <Reveal>
             <p className="font-display text-2xl text-white font-extrabold mb-3">
-              28 years is a long time.
+              <YearsText />{" "}years is a long time.
             </p>
             <p className="text-white/60 text-lg">
               The lessons are still being learned. That&apos;s why I write.

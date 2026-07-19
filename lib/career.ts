@@ -1,3 +1,11 @@
+// Career started Nov 1997. Rendered client-side so the count climbs on its
+// own every November without a redeploy.
+export function careerYears(): number {
+  const now = new Date();
+  const years = now.getFullYear() - 1997;
+  return now.getMonth() >= 10 ? years : years - 1;
+}
+
 export type Role = {
   company: string;
   title: string;
@@ -16,7 +24,7 @@ export const roles: Role[] = [
     summary:
       "Leading marketing, growth and brand for industrial electric motors across India and international markets.",
     highlights: [
-      "Building and scaling dealer and distributor networks across India, with structured market entry into the UAE, Russia, Iran, Bangladesh, Italy and markets across Africa.",
+      "Building and scaling dealer and distributor networks across India, with structured market entry into the Middle East, Bangladesh, Italy and East and West African regions.",
       "Launched an exclusive B2B e-commerce portal for India-based stockists, supporting digital lead generation, order flow and dealer engagement.",
       "Rolled out the SSS framework (Sense, Serve, Strengthen): sensing opportunities and market demand, serving customers with the right solutions, and strengthening relationships through support and feedback.",
       "Owns product positioning across IE2 to IE5 efficiency categories, SEO-led demand creation, and CRM adoption across sales teams.",
@@ -158,11 +166,13 @@ export const markets = [
   "Belarus",
   "Singapore",
   "Indonesia",
+  "Australia",
   "EU",
 ];
 
 export const stats = [
-  { value: 28, suffix: "+", label: "years in sales & growth" },
+  // `auto: true` renders via YearsCounter (live careerYears value).
+  { value: careerYears(), suffix: "+", label: "years in sales & growth", auto: true },
   { value: 20, suffix: "+", label: "markets entered worldwide" },
   { value: 80, suffix: "%", label: "peak regional market share, vs a 50% target" },
   { value: 500, suffix: "+", label: "part export range built for Tenneco India" },
@@ -179,6 +189,14 @@ export const milestones = [
     text: "Junior sales executive at a freight company in Chennai. Monthly targets, door to door. The fundamentals never left.",
     shape:
       "M15,75 H108 V98 H138 L168,120 V140 H154 A15,15 0 0 0 124,140 H78 A15,15 0 0 0 48,140 H15 Z",
+  },
+  {
+    year: 1998,
+    product: "Cars",
+    title: "Selling Tata cars",
+    text: "Sales executive at Concorde Motors and VST Motors, Tata Motors dealers in Chennai. Cars sold month after month, and penetration pushed into upcountry Tamil Nadu.",
+    shape:
+      "M25,140 V116 L38,101 L66,86 H114 L144,101 L172,112 V140 H158 A16,16 0 0 0 126,140 H74 A16,16 0 0 0 42,140 H25 Z",
   },
   {
     year: 2001,
@@ -214,7 +232,7 @@ export const milestones = [
     year: 2022,
     product: "Electric motors",
     title: "Marketing & growth leadership",
-    text: "GM of Marketing & Growth at LEDL Motors. Dealer networks across India, market entry from the UAE and Russia to Africa, and a brand built nearly end to end.",
+    text: "GM of Marketing & Growth at LEDL Motors. Dealer networks across India, market entry into the Middle East and East and West African regions, and a brand built nearly end to end.",
     shape:
       "M38,142 V96 H46 V84 H58 V96 H68 V84 H80 V96 H90 V84 H102 V96 H112 V84 H124 V96 H132 V104 H166 V122 H132 V142 Z",
   },

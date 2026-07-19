@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import ChatbotWidget from "@/components/chatbot-widget";
+import { careerYears } from "@/lib/career";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -30,8 +31,7 @@ export const metadata: Metadata = {
     default: "Ravishankar R · Marketing & Growth Leader",
     template: "%s | Ravishankar R",
   },
-  description:
-    "28+ years building markets across India, Africa, Europe and the Middle East. Writing about sales, marketing, and building businesses that last.",
+  description: `${careerYears()}+ years building markets across India, Africa, Europe and the Middle East. Writing about sales, marketing, and building businesses that last.`,
   openGraph: {
     type: "website",
     locale: "en_IN",

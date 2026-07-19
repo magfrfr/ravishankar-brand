@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { careerYears } from "@/lib/career";
 
 export const alt = "Ravishankar R — Markets aren't found. They're made.";
 export const size = { width: 1200, height: 630 };
@@ -45,7 +46,7 @@ export default function OpengraphImage() {
           They&apos;re made.
         </div>
         <div style={{ fontSize: 30, color: "#9fb3c8", marginTop: 40 }}>
-          28 years building markets across India, Africa, Europe and the Middle East
+          {`${careerYears()} years building markets across India, Africa, Europe and the Middle East`}
         </div>
       </div>
     ),

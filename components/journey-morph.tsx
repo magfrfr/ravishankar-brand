@@ -95,11 +95,11 @@ function PinnedJourney() {
   );
   const year = useTransform(yearValue, (v) => String(Math.round(v)));
 
-  // Hub hole appears while the tire (idx 2) and gear (idx 4) are on stage.
-  const hubVisible = activeIdx === 2 || activeIdx === 4;
+  // Hub hole appears while the tire (idx 3) and gear (idx 5) are on stage.
+  const hubVisible = activeIdx === 3 || activeIdx === 5;
 
   return (
-    <div ref={outerRef} className="relative h-[560vh]">
+    <div ref={outerRef} className="relative h-[650vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 h-full flex flex-col">
           <div className="pt-20">
