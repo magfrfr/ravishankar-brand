@@ -31,6 +31,9 @@ export default function ConnectPage() {
             <CtaLink href="https://www.linkedin.com/in/ravi14775/" external>
               LinkedIn
             </CtaLink>
+            <CtaLink href="https://x.com/raviGXO" external>
+              X
+            </CtaLink>
           </div>
         </Reveal>
       </div>
