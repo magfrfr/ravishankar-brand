@@ -181,7 +181,16 @@ export const stats = [
 // Condensed milestones for the home page journey.
 // `shape` is a single-ring SVG silhouette (viewBox 0 0 200 200) of the product
 // he was selling in that era — the journey section morphs between them on scroll.
-export const milestones = [
+type Milestone = {
+  year: number;
+  product: string;
+  title: string;
+  text: string;
+  shape: string;
+  ongoing?: boolean;
+};
+
+export const milestones: Milestone[] = [
   {
     year: 1997,
     product: "Freight",
@@ -230,6 +239,7 @@ export const milestones = [
   },
   {
     year: 2022,
+    ongoing: true,
     product: "Electric motors",
     title: "Marketing & growth leadership",
     text: "GM of Marketing & Growth at LEDL Motors. Dealer networks across India, market entry into the Middle East and East and West African regions, and a brand built nearly end to end.",

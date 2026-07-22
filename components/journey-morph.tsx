@@ -16,6 +16,9 @@ const SEGMENTS = milestones.length - 1;
 // Within each segment: hold the current shape, morph, then hold the next.
 const MORPH_START = 0.35;
 const MORPH_END = 0.65;
+// The last role is ongoing: after the final morph lands, the year counter
+// keeps rolling from that milestone's year up to today.
+const CURRENT_YEAR = new Date().getFullYear();
 
 function JourneyHeader() {
   return (
@@ -44,7 +47,9 @@ function StaticJourney() {
           <Reveal key={m.year} delay={i * 0.05} className="relative">
             <div className="absolute -left-10 top-1.5 w-4 h-4 rounded-full bg-amber-brand border-2 border-white shadow" />
             <p className="font-display text-2xl font-extrabold text-navy-950">
-              <span className="text-amber-dark mr-3">{m.year}</span>
+              <span className="text-amber-dark mr-3">
+                {m.ongoing ? `${m.year} – Present` : m.year}
+              </span>
               {m.title}
             </p>
             <p className="mt-2 text-navy-600 leading-relaxed">{m.text}</p>
@@ -90,8 +95,16 @@ function PinnedJourney() {
 
   const yearValue = useTransform(
     scrollYProgress,
-    milestones.map((_, i) => i / SEGMENTS),
-    milestones.map((m) => m.year)
+    [
+      ...milestones.slice(0, -1).map((_, i) => i / SEGMENTS),
+      (SEGMENTS - 1 + MORPH_END) / SEGMENTS,
+      1,
+    ],
+    [
+      ...milestones.slice(0, -1).map((m) => m.year),
+      milestones[SEGMENTS].year,
+      CURRENT_YEAR,
+    ]
   );
   const year = useTransform(yearValue, (v) => String(Math.round(v)));
 
@@ -144,7 +157,7 @@ function PinnedJourney() {
                     }`}
                   >
                     <p className="font-mono text-xs tracking-widest uppercase text-amber-dark mb-2">
-                      {m.product}
+                      {m.ongoing ? `${m.product} · since ${m.year}` : m.product}
                     </p>
                     <h3 className="font-display text-2xl lg:text-3xl font-extrabold text-navy-950 mb-3">
                       {m.title}

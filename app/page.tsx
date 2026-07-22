@@ -212,11 +212,11 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
             <h2 className="font-display text-3xl font-extrabold text-navy-950 mb-4">
-              Building a market? Let&apos;s talk.
+              Here to compare notes.
             </h2>
             <p className="text-navy-600 text-lg mb-8 max-w-xl mx-auto">
-              Founders working out a go-to-market, companies entering a new
-              region, salespeople who want to compare notes. The door is open.
+              Salespeople, marketers, anyone curious about how markets get
+              built. If something here made you think, write in.
             </p>
             <CtaLink href="/connect" className="text-base">
               Connect

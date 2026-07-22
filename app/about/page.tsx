@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SpecSheet from "@/components/spec-sheet";
 import CtaLink from "@/components/cta-link";
 import { Reveal } from "@/components/motion";
@@ -69,15 +70,17 @@ export default function AboutPage() {
             </p>
           </Reveal>
 
-          {/* Photo placeholder */}
+          {/* Photo */}
           <Reveal delay={0.15}>
             <div className="sticky top-24">
-              <div className="overflow-hidden bg-blue-wash aspect-[3/4] flex items-center justify-center">
-                <div className="w-32 h-32 rounded-full border-2 border-navy-950 flex items-center justify-center ring-4 ring-offset-4 ring-offset-blue-wash ring-blue-light">
-                  <span className="font-display text-4xl font-extrabold text-navy-950">
-                    RR
-                  </span>
-                </div>
+              <div className="relative overflow-hidden bg-blue-wash aspect-[3/4]">
+                <Image
+                  src="/ravishankar.jpg"
+                  alt="Ravishankar R"
+                  fill
+                  sizes="(min-width: 768px) 30vw, 100vw"
+                  className="object-cover"
+                />
               </div>
               <div className="mt-4 text-center">
                 <p className="font-display text-lg font-extrabold text-navy-950">
