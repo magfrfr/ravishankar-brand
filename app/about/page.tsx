@@ -73,14 +73,20 @@ export default function AboutPage() {
           {/* Photo */}
           <Reveal delay={0.15}>
             <div className="sticky top-24">
-              <div className="relative overflow-hidden bg-blue-wash aspect-[3/4]">
-                <Image
-                  src="/ravishankar.jpg"
-                  alt="Ravishankar R"
-                  fill
-                  sizes="(min-width: 768px) 30vw, 100vw"
-                  className="object-cover"
+              <div className="relative">
+                <div
+                  className="absolute inset-0 translate-x-3 translate-y-3 border border-amber-brand"
+                  aria-hidden="true"
                 />
+                <div className="relative overflow-hidden bg-blue-wash aspect-square">
+                  <Image
+                    src="/ravishankar.jpg"
+                    alt="Ravishankar R"
+                    fill
+                    sizes="(min-width: 768px) 30vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <div className="mt-4 text-center">
                 <p className="font-display text-lg font-extrabold text-navy-950">
