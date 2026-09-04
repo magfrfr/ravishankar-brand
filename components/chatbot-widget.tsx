@@ -127,6 +127,7 @@ export default function ChatbotWidget() {
         body: JSON.stringify({ messages: [...messages, userMsg] }),
       });
 
+      if (!res.ok) throw new Error(`Chat request failed: ${res.status}`);
       if (!res.body) throw new Error("No response body");
 
       const reader = res.body.getReader();
